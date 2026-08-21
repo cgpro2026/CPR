@@ -13,7 +13,7 @@ export type Process = {
 };
 
 export const processes: Process[] = [
-  { id: "PROC-001", tipo: "Processos finalísticos - sedec", macroprocesso: "Gerir riscos e desastres", processo: "Acionar protocolo de resposta a desastres", subprocesso: "", classificacao: "Finalístico", prioridade: "Não prioritário", secretaria: "SEDEC", ator: "SEDEC", ano: null, status: "Previsto" },
+{ id: "PROC-001", tipo: "Processos finalísticos - sedec", macroprocesso: "Gerir riscos e desastres", processo: "Acionar protocolo de resposta a desastres", subprocesso: "", classificacao: "Finalístico", prioridade: "Não prioritário", secretaria: "SEDEC", ator: "SEDEC", ano: null, status: "Previsto" },
 { id: "PROC-002", tipo: "Processos finalísticos - sdr/sedec/snsh", macroprocesso: "Gerenciar transferências de recursos", processo: "Acompanhar a execução de instrumentos de repasse", subprocesso: "", classificacao: "Finalístico", prioridade: "PEI/CEG", secretaria: "SDR", ator: "SDR/SEDEC/SNSH", ano: null, status: "Previsto" },
 { id: "PROC-003", tipo: "Processos finalísticos - snsh", macroprocesso: "Implantar estruturas hídricas estratégicas", processo: "Acompanhar a execução do empreendimento", subprocesso: "", classificacao: "Finalístico", prioridade: "Não prioritário", secretaria: "SNSH", ator: "SNSH", ano: null, status: "Previsto" },
 { id: "PROC-004", tipo: "Processos de governança", macroprocesso: "Gestão estratégica", processo: "Acompanhar as tramitações no Congresso Nacional de interesse do Ministério", subprocesso: "", classificacao: "Gerenciais", prioridade: "Não prioritário", secretaria: "GM", ator: "ASPAR", ano: null, status: "Previsto" },
@@ -248,7 +248,7 @@ export const valueChain = {
     ],
     [
       { id: "vc-f4", label: "ESTRUTURAR CADEIAS PRODUTIVAS REGIONAIS", macro: "Gestão de Convênios" },
-      { id: "vc-f5", label: "GERIR RISCOS E DESASTRES", macro: "Gerir Riscos e Desastres" },
+      { id: "vc-f5", label: "GERIR RISCOS E DESASTRES", macro: "Gerir riscos e desastres" },
       { id: "vc-f6", label: "GERENCIAR A REVITALIZAÇÃO DE BACIAS HIDROGRÁFICAS", macro: "Implantar Estruturas Hídricas" },
     ],
     [
