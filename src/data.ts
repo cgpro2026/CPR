@@ -230,38 +230,38 @@ export const processDescriptions: Record<string, string> = {
 // Value chain structure
 export const valueChain = {
   estrategicos: [
-    { id: "vc-e1", label: "ESTABELECER ESTRATÉGIAS E DIRETRIZES SETORIAIS INTEGRADAS", macro: "Gestão Estratégica" },
-    { id: "vc-e2", label: "COORDENAR A ELABORAÇÃO, IMPLEMENTAÇÃO, MONITORAMENTO E REVISÃO DE PLANOS NACIONAIS", macro: "Gestão Estratégica" },
+    { id: "vc-e1", label: "ESTABELECER ESTRATÉGIAS E DIRETRIZES SETORIAIS INTEGRADAS", macro: "Gestão estratégica" },
+    { id: "vc-e2", label: "COORDENAR A ELABORAÇÃO, IMPLEMENTAÇÃO, MONITORAMENTO E REVISÃO DE PLANOS NACIONAIS", macro: "Gestão estratégica" },
     { id: "vc-e3", label: "FORNECER APOIO E ASSISTÊNCIA TÉCNICA AOS ENTES FEDERATIVOS E ENTIDADES SETORIAIS", macro: "Gestão de Convênios" },
-    { id: "vc-e4", label: "GERENCIAR SISTEMAS NACIONAIS DE INFORMAÇÕES", macro: "Tecnologia da Informação" },
+    { id: "vc-e4", label: "GERENCIAR SISTEMAS NACIONAIS DE INFORMAÇÕES", macro: "Tecnologia da informação" },
   ],
   gerenciais: [
-    { id: "vc-g1", label: "GESTÃO ESTRATÉGICA", macro: "Gestão Estratégica" },
-    { id: "vc-g2", label: "INTEGRIDADE E CONTROLE", macro: "Gestão Estratégica" },
+    { id: "vc-g1", label: "GESTÃO ESTRATÉGICA", macro: "Gestão estratégica" },
+    { id: "vc-g2", label: "INTEGRIDADE E CONTROLE", macro: "Gestão estratégica" },
     { id: "vc-g3", label: "COMUNICAÇÃO", macro: "Comunicação" },
   ],
   finalisticos: [
     [
-      { id: "vc-f1", label: "COORDENAR O PLANEJAMENTO REGIONAL E A GESTÃO DO TERRITÓRIO", macro: "Gestão Estratégica" },
-      { id: "vc-f2", label: "IMPLANTAR ESTRUTURAS HÍDRICAS ESTRATÉGICAS", macro: "Implantar Estruturas Hídricas" },
-      { id: "vc-f3", label: "PROMOVER O DESENVOLVIMENTO DA AGRICULTURA IRRIGADA", macro: "Implantar Estruturas Hídricas" },
+      { id: "vc-f1", label: "COORDENAR O PLANEJAMENTO REGIONAL E A GESTÃO DO TERRITÓRIO", macro: "Gestão estratégica" },
+      { id: "vc-f2", label: "IMPLANTAR ESTRUTURAS HÍDRICAS ESTRATÉGICAS", macro: "Implantar estruturas hídricas estratégicas" },
+      { id: "vc-f3", label: "PROMOVER O DESENVOLVIMENTO DA AGRICULTURA IRRIGADA", macro: "Implantar estruturas hídricas estratégicas" },
     ],
     [
-      { id: "vc-f4", label: "ESTRUTURAR CADEIAS PRODUTIVAS REGIONAIS", macro: "Gestão de Convênios" },
+      { id: "vc-f4", label: "ESTRUTURAR CADEIAS PRODUTIVAS REGIONAIS", macro: "Estruturar cadeias produtivas regionais" },
       { id: "vc-f5", label: "GERIR RISCOS E DESASTRES", macro: "Gerir riscos e desastres" },
-      { id: "vc-f6", label: "GERENCIAR A REVITALIZAÇÃO DE BACIAS HIDROGRÁFICAS", macro: "Implantar Estruturas Hídricas" },
+      { id: "vc-f6", label: "GERENCIAR A REVITALIZAÇÃO DE BACIAS HIDROGRÁFICAS", macro: "Implantar estruturas hídricas estratégicas" },
     ],
     [
-      { id: "vc-f7", label: "GERENCIAR TRANSFERÊNCIAS DE RECURSOS", macro: "Gestão de Convênios" },
-      { id: "vc-f8", label: "ESTABELECER DIRETRIZES PARA DESTINAÇÃO DE RECURSOS DOS FUNDOS REGIONAIS", macro: "Gestão Estratégica" },
-      { id: "vc-f9", label: "PROMOVER O DESENVOLVIMENTO DA AGRICULTURA IRRIGADA", macro: "Implantar Estruturas Hídricas" },
+      { id: "vc-f7", label: "GERENCIAR TRANSFERÊNCIAS DE RECURSOS", macro: "Gerenciar transferências de recursos" },
+      { id: "vc-f8", label: "ESTABELECER DIRETRIZES PARA DESTINAÇÃO DE RECURSOS DOS FUNDOS REGIONAIS", macro: "Gestão estratégica" },
+      { id: "vc-f9", label: "PROMOVER O DESENVOLVIMENTO DA AGRICULTURA IRRIGADA", macro: "Implantar estruturas hídricas estratégicas" },
     ],
   ],
   suporte: [
-    { id: "vc-s1", label: "PESSOAS", macro: "Gestão de Pessoas" },
-    { id: "vc-s2", label: "ORÇAMENTO E FINANÇAS", macro: "Gestão Orçamentária" },
-    { id: "vc-s3", label: "ADMINISTRAÇÃO E LOGÍSTICA", macro: "Administração e Logística" },
-    { id: "vc-s4", label: "TECNOLOGIA DA INFORMAÇÃO", macro: "Tecnologia da Informação" },
+    { id: "vc-s1", label: "PESSOAS", macro: "Pessoas" },
+    { id: "vc-s2", label: "ORÇAMENTO E FINANÇAS", macro: "Orçamento e finanças" },
+    { id: "vc-s3", label: "ADMINISTRAÇÃO E LOGÍSTICA", macro: "Administração e logística" },
+    { id: "vc-s4", label: "TECNOLOGIA DA INFORMAÇÃO", macro: "Tecnologia da informação" },
   ],
 };
 
