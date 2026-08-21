@@ -70,21 +70,46 @@ const edgeColor: Record<string, string> = {
 };
 
 // ─── Build RF nodes & edges ───────────────────────────────────────────────────
-function buildGraph(highlightId: string | null) {
-  const nodes: Node[] = processes
-    .filter((p) => nodePositions[p.id])
-    .map((p) => ({
-      id: p.id,
-      type: "processNode",
-      position: nodePositions[p.id],
-      data: {
+function buildGraph(highlightId) {
+  const COLUNAS = 4; // Quantidade de blocos por linha
+  const ESPACAMENTO_X = 220; // Distância horizontal
+  const ESPACAMENTO_Y = 120; // Distância vertical
+
+  const nodes = processes
+    .filter((p) => nodePositions[p.id] || true) // Processa todos os nós
+    .map((p, index) => {
+      // Calcula linha e coluna automaticamente
+      const col = index % COLUNAS;
+      const row = Math.floor(index / COLUNAS);
+
+      return {
         id: p.id,
-        label: p.processo.length > 40 ? p.processo.slice(0, 38) + "…" : p.processo,
-        classificacao: p.classificacao,
-        status: p.status,
-      },
-      selected: p.id === highlightId,
-    }));
+        type: "processNode",
+        // Substitui a posição manual por uma posição calculada em grade
+        position: { 
+          x: col * ESPACAMENTO_X, 
+          y: row * ESPACAMENTO_Y 
+        },
+        data: {
+          id: p.id,
+          label: p.processo.length > 40 ? p.processo.slice(0, 38) + "…" : p.processo,
+          classificacao: p.classificacao,
+          status: p.status,
+        },
+        selected: p.id === highlightId,
+      };
+    });
+
+  const edges = networkEdges.map((e, i) => ({
+    id: `e-${i}`,
+    source: e.source,
+    target: e.target,
+    type: "smoothstep", // Conectores curvados e organizados
+    style: { stroke: "#1B3A6B", strokeWidth: 1.5 },
+  }));
+
+  return { nodes, edges };
+}
 
   const edges: Edge[] = networkEdges
     .filter((e) => nodePositions[e.source] && nodePositions[e.target])
