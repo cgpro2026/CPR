@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@600;700&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --color-gov-navy: #1B3A6B;
+  --color-gov-navy-dark: #132d54;
+  --color-gov-navy-light: #2a4f8a;
+  --color-gov-yellow: #FFCD07;
+  --color-gov-bg: #F4F6F9;
+  --color-gov-border: #D0D7E3;
+  --font-sans: 'Roboto', system-ui, sans-serif;
+  --font-serif: 'Roboto Slab', serif;
+}
+
+body {
+  font-family: 'Roboto', system-ui, sans-serif;
+  background-color: #F4F6F9;
+  color: #1a1a2e;
+}
+
+/* Hide scrollbar but allow scrolling */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #c1c9d4; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #9aa5b5; }

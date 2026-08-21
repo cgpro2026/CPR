@@ -1,0 +1,10 @@
+{
+  "description": "This platform serves as a modern repository for Brazilian government process maps and manuals, featuring interactive graphs to track process performance and compliance.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
