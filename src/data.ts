@@ -269,7 +269,7 @@ export const valueChain = {
 export type NetworkEdge = { source: string; target: string; label?: string; type?: "sequential" | "administrative" | "support" };
 
 export const networkEdges: NetworkEdge[] = [
- // ── GOVERNANÇA ESTRATÉGICA ──────────────────────────────────────────
+  // ── GOVERNANÇA ESTRATÉGICA ──────────────────────────────────────────
   { source: "PROC-078", target: "PROC-112", type: "sequential",    label: "delibera priorização" },
   { source: "PROC-112", target: "PROC-085", type: "sequential",    label: "orienta mapeamento" },
   { source: "PROC-085", target: "PROC-086", type: "sequential",    label: "habilita monitoramento" },
@@ -423,7 +423,8 @@ export const networkEdges: NetworkEdge[] = [
 
 // Node positions for the network graph
 export const nodePositions: Record<string, { x: number; y: number }> = {
-   // ── GESTÃO ESTRATÉGICA – GM (y=40) ──────────────────────────────────
+
+  // ── GESTÃO ESTRATÉGICA – GM (y=40) ──────────────────────────────────
   "PROC-078": { x: 40,   y: 40  },  // CEG
   "PROC-077": { x: 200,  y: 40  },  // Coaride
   "PROC-079": { x: 360,  y: 40  },  // CGDSP
@@ -610,6 +611,7 @@ export const nodePositions: Record<string, { x: number; y: number }> = {
   "PROC-036": { x: 200,  y: 2460 }, // Gestão contábil e PC
   "PROC-134": { x: 360,  y: 2460 }, // Realizar prestação de contas
 };
+
 export function countBy<T>(arr: T[], key: keyof T): { name: string; value: number }[] {
   const map: Record<string, number> = {};
   arr.forEach((item) => {
